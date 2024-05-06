@@ -11,5 +11,7 @@ public class Vendedor extends Empleado {
     public void setComision(double comision) {
         this.comision = comision;
     }
-
+    public double calcularSalario(){
+        return super.calcularSalario() + comision;
+    }
 }
