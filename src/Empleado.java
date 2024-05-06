@@ -22,5 +22,8 @@ public class Empleado {
     public void setSalario(Integer salario) {
         this.salario = salario;
     }
+    public double calcularSalario(){
+        return getSalario();
+    }
 }
 

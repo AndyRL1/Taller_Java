@@ -1,6 +1,17 @@
 public class Gerente extends Empleado{
+    private double bono;
     public Gerente(String nombre, Integer salario) {
         super(nombre, salario);
     }
 
+    public double getBono() {
+        return bono;
+    }
+
+    public void setBono(double bono) {
+        this.bono = bono;
+    }
+    public double calcularSalario(){
+        return super.calcularSalario() + bono;
+    }
 }
