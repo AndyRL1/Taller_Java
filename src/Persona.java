@@ -38,6 +38,8 @@ public class Persona {
     public void mensaje(){
         System.out.println("Mi nombre es: " + this.nombre + " , Mi edad es: " + this.edad);
     }
+
+
 }
 
 
