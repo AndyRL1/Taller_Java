@@ -1,4 +1,4 @@
-public class Estudiante extends Persona{
+public class Estudiante extends Persona implements Trabajador{
 
     private String grado;
 
@@ -13,5 +13,8 @@ public class Estudiante extends Persona{
     public void mensaje(){
         super.mensaje();
         System.out.print(" , Mi grado es: " + this.grado);
+    }
+    public void realizarTarea(){
+        System.out.println("Realizando tarea escolar");
     }
 }
